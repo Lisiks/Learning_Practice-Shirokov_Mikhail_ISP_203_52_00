@@ -1,1 +1,0 @@
-# Learning_Practice-Shirokov_Mikhail_ISP_203_52_00
