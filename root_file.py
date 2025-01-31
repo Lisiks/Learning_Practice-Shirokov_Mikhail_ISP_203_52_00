@@ -21,11 +21,11 @@ class MyRoot(tkinter.Tk):
         self.Options_frame = tkinter.Frame(master=self)
         self.Records_frame = tkinter.Frame(master=self)
         self.Main_menu_frame.pack()
-        tkinter.Label(master=self.Main_menu_frame, text='Здесь нечего смотреть!!!', font=('Arial', 50)).pack(pady=180)
+        tkinter.Label(master=self.Main_menu_frame, text='Game!!!', font=('Arial', 50)).pack(pady=180)
         tkinter.Button(master=self.Main_menu_frame, text='Play', width=100, height=3, bg='gray', command=self.play_button).pack(pady=20)
         tkinter.Button(master=self.Main_menu_frame, text='Options', width=100, height=3, bg='gray', command=lambda f1=self.Main_menu_frame, f2=self.Options_frame: MyRoot.change_frame(f1, f2)).pack(pady=20)
         tkinter.Button(master=self.Main_menu_frame, text='Records', width=100, height=3, bg='gray', command=lambda f1=self.Main_menu_frame, f2=self.Records_frame: MyRoot.change_frame(f1, f2)).pack(pady=20)
-        tkinter.Button(master=self.Main_menu_frame, text='Идти делать уроки!!!', width=100, height=3, bg='gray', command=exit).pack(pady=20)
+        tkinter.Button(master=self.Main_menu_frame, text='Exit!!!', width=100, height=3, bg='gray', command=exit).pack(pady=20)
 
         tkinter.Button(master=self.Options_frame, text='Menu', command=lambda f1=self.Options_frame, f2=self.Main_menu_frame: MyRoot.change_frame(f1, f2)).pack(side='left', padx=20, pady=20)
         tkinter.Button(master=self.Records_frame, text='Menu', command=lambda f1=self.Records_frame, f2=self.Main_menu_frame: MyRoot.change_frame(f1, f2)).pack(side='left', padx=20, pady=20)
